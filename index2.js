@@ -1,5 +1,9 @@
-var x="20";
-if(x==20)
+const http = require('http');
+
+function dataControl(req,resp)
 {
-    console.log("matched");
+    resp.write("<h1>Hello, This is Dipali</h1>");
+    resp.end();
 }
+
+http.createServer(dataControl).listen(4500);

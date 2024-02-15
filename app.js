@@ -1,3 +1,7 @@
-const fs = require('fs');
-//fs.writeFileSync("hello.txt","Code step by step");
-console.log("-->",__filename);
+module.exports={
+    x:10,
+    y:20,
+    z:function(){
+        return 10;
+    }
+}
